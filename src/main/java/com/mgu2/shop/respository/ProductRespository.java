@@ -6,10 +6,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import com.mgu2.shop.models.Product;
+
 
 
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Integer> {
+public interface ProductRespository extends JpaRepository<Product, Integer> {
 
     List<Product> findByOrderByCreateTimeDesc();
 
